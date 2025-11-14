@@ -269,6 +269,9 @@ int main(int argc, char *argv[])
             printf("add [AGE NAME YEAR COURSE DAY MONTH BYEAR]\n");
             printf("del [NAME]\n");
             printf("sort_age\n");
+            printf("sort_name\n");
+            printf("sort_birthyear\n");
+            printf("sort_course\n");
             printf("help\n");
         }
     }
