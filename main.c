@@ -116,7 +116,8 @@ int main(int argc, char *argv[])
             char *name = argv[2];
             int found = 0;
             for (int i = 0; i < total_students; i++) {
-                if (mystrcmp(database[i].name, name) == 0) {
+                if (mystrcmp(database[i].name, name) == 0) 
+                {
                     free(database[i].name);
                     for (int j = i; j < total_students - 1; j++)
                     {
