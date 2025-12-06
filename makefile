@@ -1,8 +1,8 @@
 CC = gcc
 
-all: test
+all: main
 
-test: main.c mylib.c
+main: main.c mylib.c
 	$(CC) main.c mylib.c -o main.o
 
 clear:
