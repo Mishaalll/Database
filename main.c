@@ -39,13 +39,12 @@ int main(int argc, char *argv[])
     struct myData *database = NULL;
     int total_students = 0;
 
-    printf("Commands:\n");
-    printf("-add [-age -name -year -course -day -month -byear]\n");
-    printf("-del [NAME]\n");
-    printf("-sort [-age -name -year -course -day -month -byear]\n");
-    printf("-filter [-age -name -year -course -day -month -byear] [VALUE]\n");
-    printf("-help\n");
-
+        printf("Commands:\n");
+        printf("-add [-age xx -name xxxx -year xx -course xxxx -day xx -month xx -byear xxx]\n");
+        printf("-del [NAME]\n");
+        printf("-sort [-age xx] [-name xxxx] [-year xx] [-course xxxx] [-day xx] [-month xx] [-byear xxx]\n");
+        printf("-filter [-age xx] [-name xxxx] [-year xx] [-course xxxxx] [-day xx] [-month xx] [-byear xxx]\n");
+        printf("-help\n");
     FILE *fp = fopen("database.txt", "r");
     if (fp)
     {
@@ -324,10 +323,10 @@ int main(int argc, char *argv[])
         else if (mystrcmp(argv[1], "-help") == 0)
         {
             printf("Commands:\n");
-            printf("-add [-age -name -year -course -day -month -byear]\n");
+            printf("-add [-age xx -name xxxx -year xx -course xxxx -day xx -month xx -byear xxx]\n");
             printf("-del [NAME]\n");
-            printf("-sort [-age -name -year -course -day -month -byear]\n");
-            printf("-filter [-age -name -year -course -day -month -byear] [VALUE]\n");
+            printf("-sort [-age xx] [-name xxxx] [-year xx] [-course xxxx] [-day xx] [-month xx] [-byear xxx]\n");
+            printf("-filter [-age xx] [-name xxxx] [-year xx] [-course xxxxx] [-day xx] [-month xx] [-byear xxx]\n");
             printf("-help\n");
         }
     }
